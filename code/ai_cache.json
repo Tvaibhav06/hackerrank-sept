@@ -1,0 +1,52 @@
+{
+  "img_image_01": {
+    "extracted_amount": 4365000.0,
+    "_metadata": {
+      "description": "August 2019 net salary",
+      "currency": "IDR"
+    }
+  },
+  "img_image_02": {
+    "extracted_amount": 100000.0,
+    "_metadata": {
+      "description": "Outstanding rent balance",
+      "currency": "INR"
+    }
+  },
+  "msg_message_02": {
+    "action": "CONFIRM",
+    "amount": 0.0,
+    "date": "NONE",
+    "target_event_id": "EMP-0002",
+    "_metadata": {
+      "text": "Tim payroll BrightPath Media telah mengirim pembaruan. Gaji rutin untuk penggajian berikutnya sudah ..."
+    }
+  },
+  "msg_message_03": {
+    "action": "PENDING",
+    "amount": 0.0,
+    "date": "NONE",
+    "target_event_id": "EMP-0003",
+    "_metadata": {
+      "text": "Rincian penggajian Anda di Greenfield Foods telah berubah. Bonus kuartalan Anda masih menunggu hasil..."
+    }
+  },
+  "msg_message_04": {
+    "action": "REDUCE",
+    "amount": 1037.52,
+    "date": "NONE",
+    "target_event_id": "EMP-0004",
+    "_metadata": {
+      "text": "Here\u2019s the latest payroll information from Northstar Labs. Your temporary monthly pay is EUR 1037.52..."
+    }
+  },
+  "msg_message_05": {
+    "action": "DELAY",
+    "amount": 0.0,
+    "date": "2024-09-23",
+    "target_event_id": "EMP-0005",
+    "_metadata": {
+      "text": "BrightPath Media has updated your payroll record. Your confirmed salary is now expected on 2024-09-2..."
+    }
+  }
+}
