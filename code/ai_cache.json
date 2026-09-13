@@ -48,5 +48,77 @@
     "_metadata": {
       "text": "BrightPath Media has updated your payroll record. Your confirmed salary is now expected on 2024-09-2..."
     }
+  },
+  "img_image_03": {
+    "extracted_amount": 41272.0,
+    "_metadata": {
+      "description": "Bulk groceries and pantry purchase",
+      "currency": "INR"
+    }
+  },
+  "img_image_04": {
+    "extracted_amount": 2854.0,
+    "_metadata": {
+      "description": "Delivered grocery order",
+      "currency": "INR"
+    }
+  },
+  "img_image_05": {
+    "extracted_amount": 704.05,
+    "_metadata": {
+      "description": "Outstanding telecom bill",
+      "currency": "INR"
+    }
+  },
+  "img_image_06": {
+    "extracted_amount": 1995.0,
+    "_metadata": {
+      "description": "Grocery tax invoice",
+      "currency": "INR"
+    }
+  },
+  "img_image_07": {
+    "extracted_amount": 8528.0,
+    "_metadata": {
+      "description": "Restaurant tax invoice",
+      "currency": "INR"
+    }
+  },
+  "img_image_08": {
+    "extracted_amount": 15339.0,
+    "_metadata": {
+      "description": "Property maintenance invoice",
+      "currency": "INR"
+    }
+  },
+  "img_image_12": {
+    "extracted_amount": 33.5,
+    "_metadata": {
+      "description": "Taxi fare",
+      "currency": "USD"
+    }
+  },
+  "img_image_13": {
+    "extracted_amount": 2298,
+    "_metadata": {
+      "description": "Tote bag order",
+      "currency": "INR"
+    }
+  },
+  "img_image_14": {
+    "extracted_amount": 4543.0,
+    "_metadata": {
+      "description": "Pharmacy purchase",
+      "currency": "INR"
+    }
+  },
+  "msg_message_01": {
+    "action": "INCREASE",
+    "amount": 42750000,
+    "date": "2025-08-15",
+    "target_event_id": "EMP-0001",
+    "_metadata": {
+      "text": "Rincian penggajian Anda di Cobalt Systems telah berubah. Gaji bulanan Anda naik menjadi IDR 42750000..."
+    }
   }
 }

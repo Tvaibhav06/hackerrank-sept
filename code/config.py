@@ -46,3 +46,22 @@ PAYMENT_METHODS = {
     'WAIT': 'wait',
     'NOT_RECOMMENDED': 'not_recommended'
 }
+
+# ── AI / Gemini configuration ──────────────────────────────────────────
+# Model (configurable via .env override GEMINI_MODEL)
+DEFAULT_GEMINI_MODEL = 'gemini-3.6-flash'
+
+# Global request budget
+MAX_TOTAL_AI_CALLS = 300        # hard cap across entire run
+MAX_RETRIES_PER_CALL = 2        # retries only for transient 5xx/network errors
+MIN_SECONDS_BETWEEN_CALLS = 4   # minimum gap between any two API calls
+MAX_BACKOFF_SECONDS = 120       # cap on exponential backoff
+
+# Circuit-breaker
+CIRCUIT_BREAKER_FILE = CODE_DIR / 'circuit_breaker_state.json'
+CIRCUIT_BREAKER_SAFETY_MARGIN = 10  # seconds added to Retry-After
+CIRCUIT_BREAKER_DEFAULT_COOLDOWN = 120  # seconds when no Retry-After provided
+
+# Cache
+CACHE_FILE = CODE_DIR / 'ai_cache.json'  # (already defined above, kept for clarity)
+

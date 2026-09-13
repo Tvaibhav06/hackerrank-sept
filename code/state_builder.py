@@ -17,6 +17,9 @@ class EventNode:
         self.category = event.category
         self.flexibility = event.flexibility
         self.description = event.description
+        self.source_event_id = event.event_id
+        self.ai_action = None
+        self.ai_amount = None
 
 class FinancialState:
     def __init__(self, start_balance: Decimal, currency: str, min_balance: Decimal, date: datetime.date):
@@ -109,19 +112,24 @@ class StateBuilder:
                 if action == 'CANCEL':
                     e.status = 'cancelled'
                 elif action == 'DELAY':
-                    e.status = 'scheduled'
-                    if fact.get('date') and fact['date'] != 'NONE':
-                        d = datetime.date.fromisoformat(fact['date'])
-                        e.settlement_date = d
-                        e.event_date = d
+                    if e.status != 'settled':
+                        e.status = 'scheduled'
+                        if fact.get('date') and fact['date'] != 'NONE':
+                            d = datetime.date.fromisoformat(fact['date'])
+                            e.settlement_date = d
+                            e.event_date = d
                 elif action == 'REDUCE' or action == 'INCREASE':
                     amt = fact.get('amount')
                     if amt and amt != 0.0:
                         e.amount = Decimal(str(amt))
+                        e.ai_action = action
+                        e.ai_amount = e.amount
                 elif action == 'CONFIRM':
-                    e.status = 'scheduled'  # Solidifies date
+                    if e.status != 'settled':
+                        e.status = 'scheduled'  # Solidifies date
                 elif action == 'PENDING':
-                    e.status = 'pending'
+                    if e.status != 'settled':
+                        e.status = 'pending'
                     
     def build(self, profile: Profile, events: List[Event], ai_facts: Dict[str, Any], req_date: datetime.date) -> FinancialState:
         state = FinancialState(profile.current_available_balance, profile.home_currency, profile.minimum_balance_to_keep, req_date)
@@ -149,6 +157,9 @@ class StateBuilder:
             
             node = EventNode(e)
             node.amount = amt
+            if hasattr(e, 'ai_action'):
+                node.ai_action = e.ai_action
+                node.ai_amount = getattr(e, 'ai_amount', None)
             nodes.append(node)
             
         # 4. Handle Pending Debits and existing scheduled

@@ -21,12 +21,18 @@ class RecurrenceDetector:
             'examples': []
         }
         
-        # Group historical settled events by (category, description)
+        # Group historical settled events and scheduled events by (category, description)
         cat_groups = defaultdict(list)
-        for n in state.historical_events:
-            # We already filtered cancelled/failed/non_cash in StateBuilder, 
-            # and only settled events are here.
-            cat_groups[(n.category, n.description)].append(n)
+        # Combine historical (settled) and projected (scheduled/pending)
+        all_events = state.historical_events + state.projected_events
+        for n in all_events:
+            if n.status in ('settled', 'scheduled', 'pending'):
+                desc_key = n.description
+                if n.category == 'salary':
+                    d_lower = desc_key.lower()
+                    if 'prorated first' in d_lower or 'next confirmed' in d_lower or 'payroll credit' in d_lower:
+                        desc_key = 'Standard Payroll'
+                cat_groups[(n.category, desc_key)].append(n)
             
         end_date = state.request_date + datetime.timedelta(days=90)
             
@@ -34,41 +40,66 @@ class RecurrenceDetector:
             if len(evs) < 2:
                 continue
                 
+            # Check for "final" in description
+            is_final = any('final' in e.description.lower() for e in evs)
+            if is_final:
+                continue
+                
             evs = sorted(evs, key=lambda x: x.date)
             intervals = [(evs[i+1].date - evs[i].date).days for i in range(len(evs)-1)]
             avg_interval = sum(intervals) / len(intervals)
             
-            # Rule: Detect recurrence only when history supports it (20-35 days for monthly)
-            if 20 <= avg_interval <= 35:
+            # Check if expired
+            last_date = evs[-1].date
+            if (state.request_date - last_date).days > avg_interval + 15:
+                continue
+            
+            # Support weekly (6-8), bi-weekly (13-15), and monthly (26-35)
+            if (6 <= avg_interval <= 8) or (13 <= avg_interval <= 15) or (26 <= avg_interval <= 35):
                 direction = evs[0].direction
                 flex = evs[0].flexibility
                 
                 # Rule: Forecast essential variable spending conservatively -> max for debits.
+                # Flexible variable spending -> median
                 amounts = [e.amount for e in evs]
-                if direction == 'debit':
+                latest = evs[-1]
+                if getattr(latest, 'ai_action', None) in ('REDUCE', 'INCREASE') and latest.ai_amount is not None:
+                    forecast_amt = latest.ai_amount
+                elif len(amounts) >= 2 and amounts[-1] == amounts[-2]:
+                    forecast_amt = amounts[-1]
+                elif direction == 'debit' and flex == 'essential':
                     forecast_amt = max(amounts)
                 else:
-                    forecast_amt = sorted(amounts)[len(amounts)//2] # median for credit
+                    forecast_amt = sorted(amounts)[len(amounts)//2] # median
                     
                 day = Counter(e.date.day for e in evs).most_common(1)[0][0]
+                is_monthly = (26 <= avg_interval <= 35)
                 
+                curr = evs[-1].date
                 pattern_added = False
-                # Project next 3 months
-                for m_offset in range(4):
-                    m = state.request_date.month + m_offset
-                    y = state.request_date.year + (m - 1) // 12
-                    m = ((m - 1) % 12) + 1
-                    try:
-                        d = datetime.date(y, m, min(day, 28))
-                    except ValueError:
-                        continue
+                while True:
+                    if is_monthly:
+                        # Increment month
+                        m = curr.month + 1
+                        y = curr.year
+                        if m > 12:
+                            m = 1; y += 1
+                        try:
+                            curr = datetime.date(y, m, min(day, 28))
+                        except ValueError:
+                            break
+                    else:
+                        curr += datetime.timedelta(days=int(avg_interval))
                         
-                    if state.request_date < d <= end_date:
+                    if curr > end_date:
+                        break
+                        
+                    if curr >= state.request_date:
                         # Ensure we don't double count if a scheduled/amended event already exists
-                        covered = any(e.category == cat and e.description == desc and abs((e.date - d).days) <= 5 for e in state.projected_events)
+                        covered = any(e.category == cat and e.description == desc and abs((e.date - curr).days) <= (5 if is_monthly else 2) for e in state.projected_events)
                         if not covered:
                             fake_e = Event(
-                                event_id=f"proj_{cat}_{m_offset}",
+                                event_id=f"proj_{cat}_{curr.strftime('%Y%m%d')}",
                                 user_id=user_id,
                                 event_type="projected",
                                 description=desc,
@@ -76,8 +107,8 @@ class RecurrenceDetector:
                                 direction=direction,
                                 amount=forecast_amt,
                                 currency=state.currency,
-                                event_date=d,
-                                settlement_date=d,
+                                event_date=curr,
+                                settlement_date=curr,
                                 status='scheduled',
                                 linked_event_id=None,
                                 flexibility=flex,
@@ -85,6 +116,7 @@ class RecurrenceDetector:
                             )
                             n = EventNode(fake_e)
                             n.amount = forecast_amt
+                            n.source_event_id = evs[-1].event.event_id
                             state.projected_events.append(n)
                             
                             stats['total_projected_amount'] += forecast_amt

@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 import datetime
 from typing import List, Dict, Optional, Any
+from collections import defaultdict
 from config import (
     REQUESTS_FILE, PROFILES_FILE, EVENTS_FILE, RATES_FILE,
     PAYMENT_OPTIONS_FILE, MESSAGES_FILE, IMAGES_FILE
@@ -93,10 +94,10 @@ class DataLoader:
     def __init__(self):
         self.profiles: Dict[str, Profile] = {}
         self.events: Dict[str, Event] = {}
-        self.events_by_user: Dict[str, List[Event]] = {}
+        self.events_by_user: Dict[str, List[Event]] = defaultdict(list)
         self.requests: Dict[str, Request] = {}
         self.messages: List[Message] = []
-        self.payment_options: Dict[str, List[PaymentOption]] = {}
+        self.payment_options: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
         self.images: Dict[str, str] = {}  # event_id -> image_id
         
         self.load_all()

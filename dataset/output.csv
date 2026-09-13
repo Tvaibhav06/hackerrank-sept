@@ -1,251 +1,101 @@
 request_id,amount_safe_to_pay,affordability_status,recommended_payment_method,payment_plan,earliest_date_for_full_payment,spending_changes_needed,decision_explanation
-request_26,,,,,,,
-request_27,,,,,,,
-request_28,,,,,,,
-request_29,,,,,,,
-request_30,,,,,,,
-request_31,,,,,,,
-request_32,,,,,,,
-request_33,,,,,,,
-request_34,,,,,,,
-request_35,,,,,,,
-request_36,,,,,,,
-request_37,,,,,,,
-request_38,,,,,,,
-request_39,,,,,,,
-request_40,,,,,,,
-request_41,,,,,,,
-request_42,,,,,,,
-request_43,,,,,,,
-request_44,,,,,,,
-request_45,,,,,,,
-request_46,,,,,,,
-request_47,,,,,,,
-request_48,,,,,,,
-request_49,,,,,,,
-request_50,,,,,,,
-request_51,,,,,,,
-request_52,,,,,,,
-request_53,,,,,,,
-request_54,,,,,,,
-request_55,,,,,,,
-request_56,,,,,,,
-request_57,,,,,,,
-request_58,,,,,,,
-request_59,,,,,,,
-request_60,,,,,,,
-request_61,,,,,,,
-request_62,,,,,,,
-request_63,,,,,,,
-request_64,,,,,,,
-request_65,,,,,,,
-request_66,,,,,,,
-request_67,,,,,,,
-request_68,,,,,,,
-request_69,,,,,,,
-request_70,,,,,,,
-request_71,,,,,,,
-request_72,,,,,,,
-request_73,,,,,,,
-request_74,,,,,,,
-request_75,,,,,,,
-request_76,,,,,,,
-request_77,,,,,,,
-request_78,,,,,,,
-request_79,,,,,,,
-request_80,,,,,,,
-request_81,,,,,,,
-request_82,,,,,,,
-request_83,,,,,,,
-request_84,,,,,,,
-request_85,,,,,,,
-request_86,,,,,,,
-request_87,,,,,,,
-request_88,,,,,,,
-request_89,,,,,,,
-request_90,,,,,,,
-request_91,,,,,,,
-request_92,,,,,,,
-request_93,,,,,,,
-request_94,,,,,,,
-request_95,,,,,,,
-request_96,,,,,,,
-request_97,,,,,,,
-request_98,,,,,,,
-request_99,,,,,,,
-request_100,,,,,,,
-request_101,,,,,,,
-request_102,,,,,,,
-request_103,,,,,,,
-request_104,,,,,,,
-request_105,,,,,,,
-request_106,,,,,,,
-request_107,,,,,,,
-request_108,,,,,,,
-request_109,,,,,,,
-request_110,,,,,,,
-request_111,,,,,,,
-request_112,,,,,,,
-request_113,,,,,,,
-request_114,,,,,,,
-request_115,,,,,,,
-request_116,,,,,,,
-request_117,,,,,,,
-request_118,,,,,,,
-request_119,,,,,,,
-request_120,,,,,,,
-request_121,,,,,,,
-request_122,,,,,,,
-request_123,,,,,,,
-request_124,,,,,,,
-request_125,,,,,,,
-request_126,,,,,,,
-request_127,,,,,,,
-request_128,,,,,,,
-request_129,,,,,,,
-request_130,,,,,,,
-request_131,,,,,,,
-request_132,,,,,,,
-request_133,,,,,,,
-request_134,,,,,,,
-request_135,,,,,,,
-request_136,,,,,,,
-request_137,,,,,,,
-request_138,,,,,,,
-request_139,,,,,,,
-request_140,,,,,,,
-request_141,,,,,,,
-request_142,,,,,,,
-request_143,,,,,,,
-request_144,,,,,,,
-request_145,,,,,,,
-request_146,,,,,,,
-request_147,,,,,,,
-request_148,,,,,,,
-request_149,,,,,,,
-request_150,,,,,,,
-request_151,,,,,,,
-request_152,,,,,,,
-request_153,,,,,,,
-request_154,,,,,,,
-request_155,,,,,,,
-request_156,,,,,,,
-request_157,,,,,,,
-request_158,,,,,,,
-request_159,,,,,,,
-request_160,,,,,,,
-request_161,,,,,,,
-request_162,,,,,,,
-request_163,,,,,,,
-request_164,,,,,,,
-request_165,,,,,,,
-request_166,,,,,,,
-request_167,,,,,,,
-request_168,,,,,,,
-request_169,,,,,,,
-request_170,,,,,,,
-request_171,,,,,,,
-request_172,,,,,,,
-request_173,,,,,,,
-request_174,,,,,,,
-request_175,,,,,,,
-request_176,,,,,,,
-request_177,,,,,,,
-request_178,,,,,,,
-request_179,,,,,,,
-request_180,,,,,,,
-request_181,,,,,,,
-request_182,,,,,,,
-request_183,,,,,,,
-request_184,,,,,,,
-request_185,,,,,,,
-request_186,,,,,,,
-request_187,,,,,,,
-request_188,,,,,,,
-request_189,,,,,,,
-request_190,,,,,,,
-request_191,,,,,,,
-request_192,,,,,,,
-request_193,,,,,,,
-request_194,,,,,,,
-request_195,,,,,,,
-request_196,,,,,,,
-request_197,,,,,,,
-request_198,,,,,,,
-request_199,,,,,,,
-request_200,,,,,,,
-request_201,,,,,,,
-request_202,,,,,,,
-request_203,,,,,,,
-request_204,,,,,,,
-request_205,,,,,,,
-request_206,,,,,,,
-request_207,,,,,,,
-request_208,,,,,,,
-request_209,,,,,,,
-request_210,,,,,,,
-request_211,,,,,,,
-request_212,,,,,,,
-request_213,,,,,,,
-request_214,,,,,,,
-request_215,,,,,,,
-request_216,,,,,,,
-request_217,,,,,,,
-request_218,,,,,,,
-request_219,,,,,,,
-request_220,,,,,,,
-request_221,,,,,,,
-request_222,,,,,,,
-request_223,,,,,,,
-request_224,,,,,,,
-request_225,,,,,,,
-request_226,,,,,,,
-request_227,,,,,,,
-request_228,,,,,,,
-request_229,,,,,,,
-request_230,,,,,,,
-request_231,,,,,,,
-request_232,,,,,,,
-request_233,,,,,,,
-request_234,,,,,,,
-request_235,,,,,,,
-request_236,,,,,,,
-request_237,,,,,,,
-request_238,,,,,,,
-request_239,,,,,,,
-request_240,,,,,,,
-request_241,,,,,,,
-request_242,,,,,,,
-request_243,,,,,,,
-request_244,,,,,,,
-request_245,,,,,,,
-request_246,,,,,,,
-request_247,,,,,,,
-request_248,,,,,,,
-request_249,,,,,,,
-request_250,,,,,,,
-request_251,,,,,,,
-request_252,,,,,,,
-request_253,,,,,,,
-request_254,,,,,,,
-request_255,,,,,,,
-request_256,,,,,,,
-request_257,,,,,,,
-request_258,,,,,,,
-request_259,,,,,,,
-request_260,,,,,,,
-request_261,,,,,,,
-request_262,,,,,,,
-request_263,,,,,,,
-request_264,,,,,,,
-request_265,,,,,,,
-request_266,,,,,,,
-request_267,,,,,,,
-request_268,,,,,,,
-request_269,,,,,,,
-request_270,,,,,,,
-request_271,,,,,,,
-request_272,,,,,,,
-request_273,,,,,,,
-request_274,,,,,,,
-request_275,,,,,,,
+request_26,15656000.00,affordable_now,full_payment,2025-08-03:15656000,2025-08-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_27,6670.00,affordable_now,full_payment,2026-07-05:6670,2026-07-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_28,427.92,affordable_later,wait,2024-07-15:1302.4,2024-07-15,none,Your current safe capacity is 427.92. It is recommended to wait until 2024-07-15 when you can safely pay the full amount.
+request_29,28823.20,not_affordable,not_recommended,none,,none,Your current safe capacity is 28823.20. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_30,775.20,affordable_with_plan,installments,2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74,2026-04-06,none,"Paying in installments is the safest option. Your current safe capacity of 775.20 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_31,4590931.41,affordable_later,wait,2024-10-15:18164000,2024-10-15,none,Your current safe capacity is 4590931.41. It is recommended to wait until 2024-10-15 when you can safely pay the full amount.
+request_32,16022.28,affordable_later,wait,2025-03-15:40018,2025-03-15,none,Your current safe capacity is 16022.28. It is recommended to wait until 2025-03-15 when you can safely pay the full amount.
+request_33,40444.18,affordable_later,wait,2026-02-15:118000,2026-02-15,none,Your current safe capacity is 40444.18. It is recommended to wait until 2026-02-15 when you can safely pay the full amount.
+request_34,129400.00,affordable_now,full_payment,2024-12-04:129400,2024-12-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_35,47875.19,affordable_later,wait,2026-01-15:212000,2026-01-15,none,Your current safe capacity is 47875.19. It is recommended to wait until 2026-01-15 when you can safely pay the full amount.
+request_36,785.61,affordable_later,wait,2026-09-15:3954,2026-09-15,none,Your current safe capacity is 785.61. It is recommended to wait until 2026-09-15 when you can safely pay the full amount.
+request_37,4640971.30,affordable_later,wait,2024-04-15:14649000,2024-04-15,none,Your current safe capacity is 4640971.30. It is recommended to wait until 2024-04-15 when you can safely pay the full amount.
+request_38,222.33,affordable_later,wait,2025-09-15:971.3,2025-09-15,none,Your current safe capacity is 222.33. It is recommended to wait until 2025-09-15 when you can safely pay the full amount.
+request_39,84140.95,affordable_later,wait,2026-05-15:208600,2026-05-15,none,Your current safe capacity is 84140.95. It is recommended to wait until 2026-05-15 when you can safely pay the full amount.
+request_40,501.60,affordable_later,wait,2024-07-15:1290.3,2024-07-15,none,Your current safe capacity is 501.60. It is recommended to wait until 2024-07-15 when you can safely pay the full amount.
+request_41,12855909.74,affordable_later,wait,2025-11-15:38760000,2025-11-15,none,Your current safe capacity is 12855909.74. It is recommended to wait until 2025-11-15 when you can safely pay the full amount.
+request_42,52100.00,affordable_now,full_payment,2026-01-05:52100,2026-01-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_43,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_44,42264.08,affordable_later,wait,2025-04-15:95800,2025-04-15,none,Your current safe capacity is 42264.08. It is recommended to wait until 2025-04-15 when you can safely pay the full amount.
+request_45,5167850.69,affordable_later,wait,2026-09-15:21983000,2026-09-15,none,Your current safe capacity is 5167850.69. It is recommended to wait until 2026-09-15 when you can safely pay the full amount.
+request_46,38696.63,affordable_with_plan,partial_payment,2024-12-03:38696.63|2024-12-15:10753.37,2024-12-15,none,Your current safe capacity is 38696.63. You can pay this amount today and the remainder on 2024-12-15.
+request_47,38114000.00,affordable_now,full_payment,2025-05-05:38114000,2025-05-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_48,45700.00,affordable_now,full_payment,2026-07-25:45700,2026-07-25,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_49,14641343.25,affordable_with_plan,installments,2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67,2024-04-15,none,"Paying in installments is the safest option. Your current safe capacity of 14641343.25 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_50,43900.00,affordable_now,full_payment,2025-08-06:43900,2025-08-06,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_51,2191000.00,affordable_now,full_payment,2026-01-03:2191000,2026-01-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_52,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_53,558.06,affordable_with_plan,installments,2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06,2025-12-15,none,"Paying in installments is the safest option. Your current safe capacity of 558.06 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_54,6607.67,not_affordable,not_recommended,none,,none,Your current safe capacity is 6607.67. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_55,143770.27,affordable_with_plan,installments,2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33,2026-06-15,none,"Paying in installments is the safest option. Your current safe capacity of 143770.27 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_56,778.78,affordable_with_plan,partial_payment,2025-02-03:778.78|2025-02-15:102.78,2025-02-15,none,Your current safe capacity is 778.78. You can pay this amount today and the remainder on 2025-02-15.
+request_57,15164.33,affordable_later,wait,2026-05-15:61446,2026-05-15,none,Your current safe capacity is 15164.33. It is recommended to wait until 2026-05-15 when you can safely pay the full amount.
+request_58,16226000.00,affordable_now,full_payment,2024-12-07:16226000,2024-12-07,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_59,140600.00,affordable_with_plan,installments,2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33,2025-05-04,none,"Paying in installments is the safest option. Your current safe capacity of 140600.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_60,135.67,affordable_later,wait,2026-01-15:199.89,2026-01-15,none,Your current safe capacity is 135.67. It is recommended to wait until 2026-01-15 when you can safely pay the full amount.
+request_61,29062.00,affordable_with_plan,installments,2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83,2024-03-03,none,"Paying in installments is the safest option. Your current safe capacity of 29062.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_62,404.23,affordable_now,full_payment,2025-08-05:404.23,2025-08-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_63,46759.30,not_affordable,not_recommended,none,2026-09-15,none,Your current safe capacity is 46759.30. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_64,48591.56,affordable_with_plan,installments,2024-06-11:22082.67|2024-07-12:22082.67|2024-08-12:22082.67,2024-06-15,none,"Paying in installments is the safest option. Your current safe capacity of 48591.56 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_65,7267.71,not_affordable,not_recommended,none,,none,Your current safe capacity is 7267.71. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_66,22200.00,affordable_now,full_payment,2026-04-03:22200,2026-04-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_67,607.45,affordable_later,wait,2024-10-15:2094,2024-10-15,none,Your current safe capacity is 607.45. It is recommended to wait until 2024-10-15 when you can safely pay the full amount.
+request_68,1629.68,affordable_with_plan,installments,2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09,2025-02-15,none,"Paying in installments is the safest option. Your current safe capacity of 1629.68 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_69,529.10,affordable_now,full_payment,2026-01-04:529.1,2026-01-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_70,61135.81,affordable_later,wait,2025-01-15:243900,2025-01-15,none,Your current safe capacity is 61135.81. It is recommended to wait until 2025-01-15 when you can safely pay the full amount.
+request_71,1110555.38,not_affordable,not_recommended,none,,none,Your current safe capacity is 1110555.38. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_72,11330.00,affordable_now,full_payment,2026-07-05:11330,2026-07-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_73,71400.00,affordable_now,full_payment,2023-01-20:71400,2023-01-20,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_74,5010.00,affordable_now,full_payment,2025-08-04:5010,2025-08-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_75,28270.00,affordable_with_plan,installments,2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27,2026-04-06,none,"Paying in installments is the safest option. Your current safe capacity of 28270.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_76,883.88,not_affordable,not_recommended,none,,none,Your current safe capacity is 883.88. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_77,60700.00,affordable_now,full_payment,2025-11-05:60700,2025-11-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_78,50200.00,affordable_now,full_payment,2025-10-02:50200,2025-10-02,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_79,483.32,not_affordable,not_recommended,none,2024-11-15,none,Your current safe capacity is 483.32. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_80,125099.30,not_affordable,not_recommended,none,,none,Your current safe capacity is 125099.30. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_81,2076.00,affordable_now,full_payment,2026-07-03:2076,2026-07-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_82,475.35,affordable_later,wait,2025-01-15:1405.2,2025-01-15,none,Your current safe capacity is 475.35. It is recommended to wait until 2025-01-15 when you can safely pay the full amount.
+request_83,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_84,22827.86,affordable_later,wait,2026-05-15:95400,2026-05-15,none,Your current safe capacity is 22827.86. It is recommended to wait until 2026-05-15 when you can safely pay the full amount.
+request_85,1296076.34,not_affordable,not_recommended,none,,none,Your current safe capacity is 1296076.34. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_86,46300.00,affordable_now,full_payment,2025-08-03:46300,2025-08-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_87,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_88,11959.79,affordable_with_plan,installments,2024-06-14:9045.23|2024-07-15:9045.23|2024-08-15:9045.23,2024-06-15,none,"Paying in installments is the safest option. Your current safe capacity of 11959.79 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_89,10533392.25,affordable_with_plan,installments,2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67,2025-11-15,none,"Paying in installments is the safest option. Your current safe capacity of 10533392.25 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_90,2560.00,affordable_now,full_payment,2026-07-06:2560,2026-07-06,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_91,900.11,affordable_later,wait,2024-10-15:1927.2,2024-10-15,none,Your current safe capacity is 900.11. It is recommended to wait until 2024-10-15 when you can safely pay the full amount.
+request_92,34034.00,affordable_now,full_payment,2025-02-05:34034,2025-02-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_93,1729.20,affordable_now,full_payment,2026-04-07:1729.2,2026-04-07,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_94,572.00,affordable_now,full_payment,2024-12-04:572,2024-12-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_95,59262.77,not_affordable,not_recommended,none,,none,Your current safe capacity is 59262.77. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_96,72779.01,affordable_with_plan,installments,2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33,2026-01-15,none,"Paying in installments is the safest option. Your current safe capacity of 72779.01 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_97,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_98,11277.72,affordable_later,wait,2025-08-15:27148,2025-08-15,none,Your current safe capacity is 11277.72. It is recommended to wait until 2025-08-15 when you can safely pay the full amount.
+request_99,18062.00,affordable_now,full_payment,2026-07-04:18062,2026-07-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_100,28738.84,affordable_with_plan,installments,2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19,2024-06-15,none,"Paying in installments is the safest option. Your current safe capacity of 28738.84 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_101,143500.00,affordable_now,full_payment,2025-11-03:143500,2025-11-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_102,1716.00,affordable_with_plan,installments,2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88,2026-04-05,none,"Paying in installments is the safest option. Your current safe capacity of 1716.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_103,22528.08,not_affordable,not_recommended,none,,none,Your current safe capacity is 22528.08. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_104,17204.00,affordable_now,full_payment,2025-02-04:17204,2025-02-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_105,53500.00,affordable_now,full_payment,2026-06-08:53500,2026-06-08,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_106,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_107,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_108,3571.32,not_affordable,not_recommended,none,,none,Your current safe capacity is 3571.32. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_109,806.72,affordable_with_plan,installments,2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98,2024-03-15,none,"Paying in installments is the safest option. Your current safe capacity of 806.72 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_110,22352.00,affordable_with_plan,installments,2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69,2025-08-06,none,"Paying in installments is the safest option. Your current safe capacity of 22352.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_111,16625000.00,affordable_now,full_payment,2026-04-03:16625000,2026-04-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_112,271.70,affordable_now,full_payment,2024-06-05:271.7,2024-06-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_113,36500.00,affordable_now,full_payment,2026-09-04:36500,2026-09-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_114,65300.00,affordable_now,full_payment,2026-01-04:65300,2026-01-04,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_115,14858.57,affordable_later,wait,2024-10-15:80500,2024-10-15,none,Your current safe capacity is 14858.57. It is recommended to wait until 2024-10-15 when you can safely pay the full amount.
+request_116,16611.71,not_affordable,not_recommended,none,,none,Your current safe capacity is 16611.71. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_117,880.00,affordable_now,full_payment,2026-07-05:880,2026-07-05,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_118,695.55,affordable_with_plan,installments,2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87,2024-12-15,none,"Paying in installments is the safest option. Your current safe capacity of 695.55 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_119,0.00,not_affordable,not_recommended,none,,none,Your current safe capacity is 0.00. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_120,7714000.00,affordable_now,full_payment,2026-04-06:7714000,2026-04-06,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_121,633.60,affordable_now,full_payment,2024-03-03:633.6,2024-03-03,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_122,20558000.00,affordable_with_plan,installments,2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33,2025-08-05,none,"Paying in installments is the safest option. Your current safe capacity of 20558000.00 is insufficient for a full payment, but the installment plan fits within your forecast minimums."
+request_123,4076000.00,affordable_now,full_payment,2026-01-07:4076000,2026-01-07,none,You can safely pay the full amount today without dropping below your minimum required balance.
+request_124,681.45,not_affordable,not_recommended,none,,none,Your current safe capacity is 681.45. No safe payment plan is available within the requested timeline that keeps your balance above the minimum required.
+request_125,6468.00,affordable_now,full_payment,2025-11-06:6468,2025-11-06,none,You can safely pay the full amount today without dropping below your minimum required balance.

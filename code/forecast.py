@@ -12,8 +12,9 @@ class Payment:
     amount: Decimal
 
 class ForecastEngine:
-    def __init__(self, state: FinancialState):
+    def __init__(self, state: FinancialState, debits_first: bool = True):
         self.state = state
+        self.debits_first = debits_first
         self.end_date = self.state.request_date + datetime.timedelta(days=90)
 
     def is_plan_safe(self, payments: List[Payment]) -> bool:
@@ -50,13 +51,16 @@ class ForecastEngine:
             # Include plan payments as debits
             daily_debits += payments_by_date.get(current_date, Decimal(0))
 
-            # Worst case intraday: debits hit first
-            sim -= daily_debits
-            if sim < min_bal:
-                return False
-
-            # Credits hit next
-            sim += daily_credits
+            if self.debits_first:
+                sim -= daily_debits
+                if sim < min_bal:
+                    return False
+                sim += daily_credits
+            else:
+                sim += daily_credits
+                sim -= daily_debits
+                if sim < min_bal:
+                    return False
             
             current_date += datetime.timedelta(days=1)
 
@@ -86,12 +90,14 @@ class ForecastEngine:
                 else:
                     daily_credits += e.amount
 
-            # Debits first
-            sim -= daily_debits
-            min_headroom = min(min_headroom, sim - min_bal)
-            
-            # Credits next
-            sim += daily_credits
+            if self.debits_first:
+                sim -= daily_debits
+                min_headroom = min(min_headroom, sim - min_bal)
+                sim += daily_credits
+            else:
+                sim += daily_credits
+                sim -= daily_debits
+                min_headroom = min(min_headroom, sim - min_bal)
             
             current_date += datetime.timedelta(days=1)
             
@@ -122,9 +128,14 @@ class ForecastEngine:
                 else:
                     daily_credits += e.amount
 
-            sim -= daily_debits
-            sim_history.append({'date': current_date, 'worst_balance': sim})
-            sim += daily_credits
+            if self.debits_first:
+                sim -= daily_debits
+                sim_history.append({'date': current_date, 'worst_balance': sim})
+                sim += daily_credits
+            else:
+                sim += daily_credits
+                sim -= daily_debits
+                sim_history.append({'date': current_date, 'worst_balance': sim})
             
             current_date += datetime.timedelta(days=1)
             
